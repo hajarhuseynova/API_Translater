@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Translater</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <ul class="controls">
+          <li class="left">
+            <div class="icons">
+              <i class="fas fa-volume-up" id="from"></i>
+              <i class="fas fa-copy" id="from"></i>
+            </div>
+            <select id="fromLanguage"></select>
+          </li>
+          <li class="exchange">
+            <i class="fas fa-exchange-alt"></i>
+          </li>
+          <li class="right">
+            <select id="toLanguage"></select>
+            <div class="icons">
+              <i class="fas fa-volume-up" id="to"></i>
+              <i class="fas fa-copy" id="to"></i>
+            </div>
+          </li>
+        </ul>
+        <div class="text-controls">
+          <textarea
+            id="fromText"
+            class="fromText"
+            placeholder="Write text..."
+          ></textarea>
+          <textarea
+            class="toText"
+            id="toText"
+            readonly
+            disabled
+            placeholder="Translate"
+          ></textarea>
+        </div>
+      </div>
+      <button id="btnTranslate">Translate</button>
+    </div>
+
+    <script src="languages.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
